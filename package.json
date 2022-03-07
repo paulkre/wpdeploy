@@ -1,0 +1,54 @@
+{
+  "name": "@paulkre/wpdeploy",
+  "description": "CLI tool for deploying WordPress themes/plugins via HTTP",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "type": "module",
+  "bin": {
+    "wpdeploy": "./lib/bin.js"
+  },
+  "author": "Paul Kretschel <paul.kretschel@icloud.com>",
+  "repository": "github:paulkre/wpdeploy",
+  "homepage": "https://github.com/paulkre/wpdeploy#readme",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "plugin",
+    "deployment",
+    "upload",
+    "automation",
+    "cli",
+    "cicd"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "watch": "npm run clean && tsc --watch",
+    "build": "npm run clean && tsc",
+    "lint": "eslint --ext .js,.ts .",
+    "release": "standard-version",
+    "clean": "rimraf lib"
+  },
+  "dependencies": {
+    "meow": "^10.1.0",
+    "prompts": "^2.4.2",
+    "puppeteer": "^13.4.1",
+    "ts-results": "^3.1.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@types/node": "^14.14.35",
+    "@types/prompts": "^2.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.2.3"
+  },
+  "files": [
+    "lib/"
+  ]
+}

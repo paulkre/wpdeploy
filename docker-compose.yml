@@ -1,0 +1,23 @@
+version: "3.2"
+
+services:
+  wp:
+    image: paulkre/wp:latest
+    restart: unless-stopped
+    ports: [8080:80]
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wp
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: secret
+      WORDPRESS_TABLE_PREFIX: wp_
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:latest
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: wp
+      MARIADB_ROOT_PASSWORD: secret
+      LANG: C.UTF-8
