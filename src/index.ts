@@ -10,7 +10,6 @@ export type WpDeployProps = {
   password: string;
   url: string;
   type: WpDeployPackageType;
-  data: Buffer;
   logHandler?: (msg: string) => void;
 };
 

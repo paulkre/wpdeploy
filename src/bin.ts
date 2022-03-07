@@ -2,12 +2,10 @@
 
 import meow from "meow";
 import promptsBase, { PromptObject } from "prompts";
-import fs, { existsSync } from "fs";
+import { existsSync } from "fs";
 import { resolve as resolvePath } from "path";
 
 import { wpDeploy, WpDeployPackageType } from "./index.js";
-
-const { readFile } = fs.promises;
 
 const prompts = (questions: Parameters<typeof promptsBase>[0]) =>
   promptsBase(questions, {
@@ -71,7 +69,6 @@ const isWpDeployAssetType = (value?: string): value is WpDeployPackageType =>
 
   const deployResult = await wpDeploy({
     filePath,
-    data: await readFile(filePath),
     url: url || (await promptText("Site URL?")),
     user: user || (await promptText("WordPress username?")),
     password: password || (await promptText("WordPress password?")),
