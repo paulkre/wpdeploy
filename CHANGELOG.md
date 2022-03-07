@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/paulkre/wpdeploy/compare/v1.0.2...v1.0.3) (2022-03-07)
+
+
+### Bug Fixes
+
+* Add MIT license ([2195556](https://github.com/paulkre/wpdeploy/commit/219555640bc9f290113d6738ffaec960bd2fc212))
+* Remove unnecessary `data` prop from input params ([d62d0c2](https://github.com/paulkre/wpdeploy/commit/d62d0c28457b6453078a12e99c111546f2c5d115))
+* Update ESLint Typescript dependencies ([1b7df9f](https://github.com/paulkre/wpdeploy/commit/1b7df9f95637390a4fd7a6348b99f5861c1aaea7))
+
 ### [1.0.2](https://github.com/paulkre/wpdeploy/compare/v1.0.1...v1.0.2) (2022-03-07)
 
 
