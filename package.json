@@ -2,6 +2,7 @@
   "name": "@paulkre/wpdeploy",
   "description": "CLI tool for deploying WordPress themes/plugins via HTTP",
   "version": "1.0.2",
+  "license": "MIT",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
@@ -50,6 +51,7 @@
     "typescript": "^4.2.3"
   },
   "files": [
-    "lib/"
+    "lib/",
+    "LICENSE"
   ]
 }
