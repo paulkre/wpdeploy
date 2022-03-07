@@ -16,3 +16,5 @@ wpdeploy --type <theme|plugin> \
   -u <user> -p <password> \
   plugin-or-theme.zip
 ```
+
+Make sure the language of the user account is set to English, otherwise the deployment will not work.
