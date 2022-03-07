@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/paulkre/wpdeploy/compare/v1.0.1...v1.0.2) (2022-03-07)
+
+
+### Bug Fixes
+
+* Add missing `tslib` library ([b0356fc](https://github.com/paulkre/wpdeploy/commit/b0356fcae731fa3d5004786b32ac70d23fbdafe2))
+
 ### [1.0.1](https://github.com/paulkre/wpdeploy/compare/v1.0.0...v1.0.1) (2022-03-07)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@paulkre/wpdeploy",
   "description": "CLI tool for deploying WordPress themes/plugins via HTTP",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
