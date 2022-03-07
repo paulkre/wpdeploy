@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env node
 
 import meow from "meow";
 import promptsBase, { PromptObject } from "prompts";
